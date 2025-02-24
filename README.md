@@ -34,7 +34,7 @@ A repository for my personal portfolio website, where I showcase my projects, sk
     <li>
         <p>Start the application</p>
         <p><pre>npm run start</pre></p>
-        <p><pre>open index.html</p>
+        <p><pre>open index.html</pre></p>
     </li>
 </ol>
 
