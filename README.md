@@ -1,5 +1,5 @@
 ## Portofolio
-This is my personal portfolio website showcasing my projects, skills, and experiences. Built with modern web technologies to ensure a smooth and interactive user experience.
+A repository for my personal portfolio website, where I showcase my projects, skills, and experiences. Built with modern web technologies to provide a seamless and interactive user experience.
 
 ## 🚀 Key Feature
 <ul>
@@ -21,19 +21,20 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 <ol>
     <li>
         <p>Clone this repository</p>
-        <p>git clone https://github.com/Raafina/portofolio.git</p>
+        <p><pre>git clone https://github.com/Raafina/portofolio.git</pre></p>
     </li>
     <li>
         <p>Navigate to the project directory</p>
-        <p>cd portofolio</p>
+        <p><pre>cd portofolio</pre></p>
     </li>
     <li>
         <p>Install dependencies</p>
-        <p>npm install</p>
+        <p><pre>npm install</pre></p>
     </li>
     <li>
         <p>Start the application</p>
-        <p>open index.html</p>
+        <p><pre>npm run start</pre></p>
+        <p><pre>open index.html</p>
     </li>
 </ol>
 
