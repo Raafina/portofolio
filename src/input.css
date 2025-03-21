@@ -33,3 +33,52 @@ body {
 #darkToggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+.typing-text {
+  display: flex;
+  flex-direction: column;
+  height: 2rem; /* Sesuaikan dengan ukuran teks */
+  overflow: hidden;
+  position: relative;
+}
+
+.typing-text span {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  animation: typing 6s infinite;
+}
+
+.typing-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.typing-text span:nth-child(2) {
+  animation-delay: 2s;
+}
+.typing-text span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
