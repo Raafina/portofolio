@@ -82,3 +82,15 @@ body {
     transform: translateY(-100%);
   }
 }
+
+@font-face {
+  font-family: 'Inter';
+  src:
+    url('fonts/Inter-Regular.woff2') format('woff2'),
+    url('fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
