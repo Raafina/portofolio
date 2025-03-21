@@ -23,7 +23,7 @@
             </a>
           </div>
 
-          <div class="flex items-center px-4">
+          <div class="flex items-center px-4 order-2 lg:order-1">
             <button id="hamburger" class="block absolute lg:hidden right-4">
               <span
                 class="hamburger-line origin-bottom-left trasition duration-300 ease-in-out"></span>
@@ -75,7 +75,7 @@
             </nav>
           </div>
 
-          <div class="flex items-center">
+          <div class="flex items-center order-1 lg:order-2">
             <input type="checkbox" class="hidden" id="darkToggle" />
             <label for="darkToggle" class="cursor-pointer">
               <div
@@ -373,12 +373,14 @@
             </p>
           </div>
 
-          <div class="w-full md:px-24">
+          <div class="w-full">
             <div
-              class="grid grid-cols-5 max-w-full mx-auto gap-2 sm:gap-4 mb-2 sm:mb-4">
+              class="flex flex-wrap w-full gap-2 sm:gap-4 mb-2 sm:mb-4 justify-center">
+              <!-- <div
+              class="grid grid-cols-5 lg:grid-cols-4 max-w-full mx-auto gap-2 sm:gap-4 mb-2 sm:mb-4 justify-center"> -->
               <!-- Laravel -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -406,7 +408,7 @@
               </div>
               <!-- NextJS -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -464,7 +466,7 @@
               </div>
               <!-- Node JS -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -496,7 +498,7 @@
               </div>
               <!-- React JS -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -539,7 +541,7 @@
               </div>
               <!-- Express JS -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 sm:p-1 p-2 rounded-xl">
                   <svg
@@ -599,12 +601,9 @@
                   Express JS
                 </h3>
               </div>
-            </div>
-            <div
-              class="grid grid-cols-5 max-w-full mx-auto gap-2 sm:gap-4 mb-2 sm:mb-4">
               <!-- Tailwind -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -632,7 +631,7 @@
               </div>
               <!-- Bootstrap -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -662,7 +661,7 @@
               </div>
               <!-- TS -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -694,7 +693,7 @@
               </div>
               <!-- JavaScript -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -726,7 +725,7 @@
               </div>
               <!-- Phyton -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -778,11 +777,9 @@
                   Python
                 </h3>
               </div>
-            </div>
-            <div class="grid grid-cols-5 max-w-full mx-auto gap-2 sm:gap-4">
               <!-- PHP -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -824,7 +821,7 @@
               </div>
               <!-- MYSQL -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -856,7 +853,7 @@
               </div>
               <!-- PostgreSQL -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -896,7 +893,7 @@
               </div>
               <!-- MongoDB -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -932,7 +929,7 @@
               </div>
               <!-- Cloudinary -->
               <div
-                class="border-slate-300 dark:border-slate-600 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
+                class="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 md:flex">
                 <div
                   class="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                   <svg
@@ -1351,7 +1348,7 @@
             <a
               href="https://github.com/Raafina"
               target="_blank"
-              class="w-9 h-9 p-1 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-white hover:text-white">
+              class="w-9 h-9 p-1 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-secondary hover:text-white">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -1366,7 +1363,7 @@
             <a
               href="https://www.instagram.com/raafi.na/"
               target="_blank"
-              class="w-9 h-9 mr-3 border-secondary border-2 flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-white hover:text-white">
+              class="w-9 h-9 mr-3 border-secondary border-2 flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-secondary hover:text-white">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -1382,7 +1379,7 @@
             <a
               href="https://www.linkedin.com/in/raafi-na"
               target="_blank"
-              class="w-9 h-9 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-white hover:text-white">
+              class="w-9 h-9 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-secondary hover:text-white">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -1399,7 +1396,7 @@
             <a
               href="https://strava.app.link/27gtrruHEQb"
               target="_blank"
-              class="w-9 h-9 p-1 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-white hover:text-white">
+              class="w-9 h-9 p-1 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-secondary hover:text-white">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
