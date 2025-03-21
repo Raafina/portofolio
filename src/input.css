@@ -94,3 +94,11 @@ body {
 .font-inter {
   font-family: 'Inter', sans-serif;
 }
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px; /* Adjust based on your content size */
+}
