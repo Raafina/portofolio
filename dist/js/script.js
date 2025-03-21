@@ -34,39 +34,37 @@ window.addEventListener('click', (e) => {
 
 // dark mode
 const html = document.documentElement;
+const darkToggle = document.getElementById('darkToggle');
+const sunIcon = document.getElementById('sun-icon');
+const moonIcon = document.getElementById('moon-icon');
 
-// check local storage
-if (
-  localStorage.getItem('theme') === 'dark' ||
-  (!localStorage.getItem('theme') &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches)
-) {
-  html.classList.add('dark');
-  localStorage.setItem('theme', 'dark'); // Default to dark
-} else {
-  html.classList.remove('dark');
-  localStorage.setItem('theme', 'light');
+function updateTheme(isDark) {
+  if (isDark) {
+    html.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+    sunIcon.classList.add('hidden');
+    moonIcon.classList.remove('hidden');
+  } else {
+    html.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+    moonIcon.classList.add('hidden');
+    sunIcon.classList.remove('hidden');
+  }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const darkToggle = document.querySelector('#darkToggle');
+// Cek localStorage untuk mode sebelumnya
+const isDarkMode =
+  localStorage.getItem('theme') === 'dark' ||
+  (!localStorage.getItem('theme') &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches);
 
-  if (localStorage.getItem('theme') === 'dark') {
-    darkToggle.checked = true;
-  }
+darkToggle.checked = isDarkMode;
+updateTheme(isDarkMode);
 
-  darkToggle.addEventListener('change', () => {
-    if (darkToggle.checked) {
-      html.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      html.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  });
+// Event listener untuk toggle
+darkToggle.addEventListener('change', () => {
+  updateTheme(darkToggle.checked);
 });
-
-const checkbox = document.getElementById('darkToggle');
 
 // send email
 const apiURL = 'https://formspree.io/f/xjkgaakp';

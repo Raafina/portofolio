@@ -18,24 +18,7 @@
               raafinuradzani
             </a>
           </div>
-          <div>
-            <div class="flex">
-              <span class="mr-2 text-sm text-slate-500 dark:text-slate-200"
-                >Light</span
-              >
-              <input type="checkbox" class="hidden" id="darkToggle" />
-              <label for="darkToggle">
-                <div
-                  class="flex items-center h-5 w-9 bg-slate-500 rounded-full relative cursor-pointer p-1">
-                  <div
-                    class="toggle-circle rounded-full w-4 h-4 bg-white transition duration-300 ease-in-out"></div>
-                </div>
-              </label>
-              <span class="ml-2 text-sm text-slate-500 dark:text-slate-200"
-                >Dark</span
-              >
-            </div>
-          </div>
+
           <div class="flex items-center px-4">
             <button id="hamburger" class="block absolute lg:hidden right-4">
               <span
@@ -87,6 +70,50 @@
               </ul>
             </nav>
           </div>
+
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden" id="darkToggle" />
+            <label for="darkToggle" class="cursor-pointer">
+              <div
+                class="flex items-center h-7 w-12 rounded-full relative p-1 transition duration-300 ease-in-out">
+                <!-- Light Mode Icon -->
+                <svg
+                  id="sun-icon"
+                  class="w-6 h-6 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+                </svg>
+
+                <!-- Dark Mode Icon -->
+                <svg
+                  id="moon-icon"
+                  class="w-6 h-6 text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 5v3m0 0v3m0-3h-3m3 0h3m-3.3556 7.0913c-1.6389 0-2.58-.2487-3.7085-.9576-1.1285-.709-2.0191-1.7196-2.5631-2.9086-.54402-1.1891-.71806-2.50523-.5009-3.78809.2172-1.28287.8161-2.47705 1.724-3.43701-1.3427.20491-2.60689.74436-3.66765 1.56511-1.06077.82074-1.88149 1.8944-2.38113 3.11496-.49965 1.22056-.66094 2.54583-.46795 3.84493.19298 1.2992.73357 2.5273 1.56839 3.563.83482 1.0358 1.93501 1.8435 3.19194 2.3433 1.2569.4999 2.6272.6745 3.9754.5068 1.3482-.1676 2.6279-.6719 3.7125-1.463 1.0847-.7911 1.937-1.8416 2.4726-3.0478-1.0063.5199-1.9323.664-3.3556.664Z" />
+                </svg>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
     </header>
@@ -124,12 +151,11 @@
             </div>
             <p
               class="font-medium text-base mb-5 text-secondary dark:text-slate-300">
-              I’m a web developer with experience in various technologies,
+              I'm a web developer with experience in various technologies,
               including JavaScript and PHP frameworks. I have a passion for
               creating innovative digital solutions that truly meet user needs.
-              Beyond that, I enjoy learning new things and sharing knowledge
-              with others—whether through collaboration or helping fellow
-              developers grow.
+              I also enjoy learning new things and collaborating with others to
+              solve the problems.
             </p>
             <div
               class="flex flex-col md:flex-row gap-3 text-center md:text-left">
