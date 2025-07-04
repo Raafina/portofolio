@@ -11,7 +11,7 @@ export default function Project() {
           <div className="max-w-xl mx-auto text-center mb-16">
             <h4 className="font-bold text-lg text-primary mb-2">Portofolio</h4>
             <h2 className="font-bold text-dark dark:text-white text-3xl mb-4">
-              Latest Project
+              Selected Project
             </h2>
             <p className="font-medium text-md text-secondary dark:text-slate-300">
               Here are some of the projects that I have built and developed.
@@ -28,7 +28,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/portfolio/images/project/loyalcust.png"
+                src="/portfoliog/images/project/loyalcust.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
@@ -111,7 +111,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/portfolio/images/project/terbangin.png"
+                src="/portfoliog/images/project/terbangin.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
@@ -196,7 +196,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/portfolio/images/project/lokapath.png"
+                src="/portfoliog/images/project/lokapath.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
@@ -241,7 +241,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/portfolio/images/project/sitoya.png"
+                src="/portfoliog/images/project/sitoya.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
