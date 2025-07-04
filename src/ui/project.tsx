@@ -28,7 +28,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/images/project/loyalcust.png"
+                src="/portfolio/images/project/loyalcust.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
@@ -111,7 +111,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/images/project/terbangin.png"
+                src="/portfolio/images/project/terbangin.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
@@ -196,7 +196,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/images/project/lokapath.png"
+                src="/portfolio/images/project/lokapath.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
@@ -241,7 +241,7 @@ export default function Project() {
               <Image
                 width={500}
                 height={500}
-                src="/images/project/sitoya.png"
+                src="/portfolio/images/project/sitoya.png"
                 alt="LoyalCust"
                 className="w-full transition duration-300 ease-in-out group-hover:blur-sm hover:bg-black"
               />
