@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Typewriter } from 'react-simple-typewriter';
 
 // Dapatkan basePath dari environment
 const basePath = process.env.NODE_ENV === 'production' ? '/portofolio' : '';

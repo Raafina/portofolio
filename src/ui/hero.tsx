@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
+const basePath = process.env.NODE_ENV === 'production' ? '/portofolio' : '';
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
               <Image
                 width={500}
                 height={500}
-                src="/images/my-photo.png"
+                src={`${basePath}/images/my-photo.png`}
                 alt="my pict"
               />
             </div>
