@@ -55,7 +55,7 @@ export default function TechStack() {
               {techStack.map((tech, index) => (
                 <div
                   key={index}
-                  className="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 flex lg:flex">
+                  className="border-slate-300 dark:border-slate-600 w-14 sm:w-24 md:w-32 lg:w-52 border-2 rounded-2xl p-1 sm:p-3 shadow-md dark:shadow-slate-800 transform transition duration-300 hover:bg-gray-100 dark:hover:bg-slate-800 lg:flex">
                   <div className="bg-slate-100 dark:bg-slate-800 p-1 sm:p-2 rounded-xl">
                     {tech.icon}
                   </div>
