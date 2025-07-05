@@ -13,7 +13,7 @@ export default function Hero() {
               <Image
                 width={500}
                 height={500}
-                src="/portfolio/images/my-photo.png"
+                src="/images/my-photo.png"
                 alt="my pict"
               />
             </div>
