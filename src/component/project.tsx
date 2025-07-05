@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import TechStackBadge from '../ui/icons/techstack-badge';
-import ProjectModal from '../ui/icons/project-modal';
+import TechStackBadge from '../ui/techstack-badge';
+import ProjectModal from '../ui/project-modal';
 
 const basePath = process.env.NODE_ENV === 'production' ? '/portofolio' : '';
 
@@ -29,6 +29,239 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
+    title: "Polyclinic Management System 'Sora Clinic'",
+    description:
+      'Sora Clinic is a web-based polyclinic management system designed to streamline patient queue handling and doctor scheduling. It offers an intuitive interface for administrators, doctors, and patients to manage appointments efficiently. Built for scalability and ease of use, Sora Clinic helps healthcare providers deliver better, faster service.',
+    image: `${basePath}/images/project/soraClinic/1.png`,
+    techStack: ['Laravel', 'Tailwind', 'Flowbite Plugin', 'MySQL'],
+    links: [
+      {
+        type: 'Repository',
+        url: 'https://github.com/Raafina/Sora-Clinic',
+        icon: 'github',
+      },
+      // {
+      //   type: 'demo',
+      //   url: 'https://nsmhc-undip-dashboard.vercel.app/',
+      //   icon: 'demo',
+      // },
+    ],
+    detailImages: [
+      {
+        src: `${basePath}/images/project/soraClinic/1.png`,
+        alt: 'LoyalCust Dashboard',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_1.png`,
+        alt: 'Sora Clinic doctor 1',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_2.png`,
+        alt: 'Sora Clinic doctor 2',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_3.png`,
+        alt: 'Sora Clinic doctor 3',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_4.png`,
+        alt: 'Sora Clinic doctor 4',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_5.png`,
+        alt: 'Sora Clinic doctor 5',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_6.png`,
+        alt: 'Sora Clinic doctor 6',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_7.png`,
+        alt: 'Sora Clinic doctor 7',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/doctor_8.png`,
+        alt: 'Sora Clinic doctor 8',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/patient_1.png`,
+        alt: 'Sora Clinic patient 1',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/patient_2.png`,
+        alt: 'Sora Clinic patient 2',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/patient_3.png`,
+        alt: 'Sora Clinic patient 3',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/patient_4.png`,
+        alt: 'Sora Clinic patient 4',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/patient_5.png`,
+        alt: 'Sora Clinic patient 5',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/admin_1.png`,
+        alt: 'Sora Clinic admin 1',
+      },
+      {
+        src: `${basePath}/images/project/soraClinic/admin_2.png`,
+        alt: 'Sora Clinic admin 2',
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "School Data Management 'Sekonekti'",
+    description:
+      'Sekonekti is a simple school management system that focuses on school data storage. This system helps schools track information about students, parents, teachers, and classes in one centralized location. With basic summary and reporting features, Sekonekti offers an efficient solution for schools that need structure without unnecessary complexity.',
+    image: `${basePath}/images/project/sekonekti/1.png`,
+    techStack: [
+      'Laravel',
+      'Tailwind',
+      'TypeScript',
+      'Intertia',
+      'React JS',
+      'MySQL',
+    ],
+    links: [
+      {
+        type: 'Repository',
+        url: 'https://github.com/Raafina/Sekonekti',
+        icon: 'github',
+      },
+      // {
+      //   type: 'demo',
+      //   url: 'https://nsmhc-undip-dashboard.vercel.app/',
+      //   icon: 'demo',
+      // },
+    ],
+    detailImages: [
+      {
+        src: `${basePath}/images/project/sekonekti/1.png`,
+        alt: 'Sekonekti 1',
+      },
+      {
+        src: `${basePath}/images/project/sekonekti/2.png`,
+        alt: 'Sekonekti 2',
+      },
+      {
+        src: `${basePath}/images/project/sekonekti/3.png`,
+        alt: 'Sekonekti 3',
+      },
+      {
+        src: `${basePath}/images/project/sekonekti/4.png`,
+        alt: 'Sekonekti 4',
+      },
+      {
+        src: `${basePath}/images/project/sekonekti/5.png`,
+        alt: 'Sekonekti 5',
+      },
+      {
+        src: `${basePath}/images/project/sekonekti/6.png`,
+        alt: 'Sekonekti 6',
+      },
+      {
+        src: `${basePath}/images/project/sekonekti/7.png`,
+        alt: 'Sekonekti 7',
+      },
+      {
+        src: `${basePath}/images/project/sekonekti/8.png`,
+        alt: 'Sekonekti 8',
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Nursing Student Mother Heart Connection Dashboard',
+    description:
+      'Dashboard for the Nursing Students Mother Heart Connection (NSMHC) research project of the Jurusan Keperawatan Fakultas Kedokteran UNDIP.',
+    image: `${basePath}/images/project/nsmhc/1.png`,
+    techStack: [
+      'Next JS',
+      'React JS',
+      'TanStack Query',
+      'Tailwind',
+      'TypeScript',
+    ],
+    links: [
+      {
+        type: 'frontend',
+        url: 'https://github.com/Raafina/NSMHC-UNDIP-Dashboard',
+        icon: 'github',
+      },
+      {
+        type: 'demo',
+        url: 'https://nsmhc-undip-dashboard.vercel.app/',
+        icon: 'demo',
+      },
+    ],
+    detailImages: [
+      {
+        src: `${basePath}/images/project/nsmhc/1.png`,
+        alt: 'NSMHC 1',
+      },
+      {
+        src: `${basePath}/images/project/nsmhc/2.png`,
+        alt: 'NSMHC 2',
+      },
+      {
+        src: `${basePath}/images/project/nsmhc/3.png`,
+        alt: 'NSMHC 3',
+      },
+    ],
+  },
+  {
+    id: 3.5,
+    title: 'Automated Selection System using MOORA Method for BI Internship',
+    description:
+      "A decision support system developed for Bank Indonesia's internship selection process using the MOORA method. This project automates applicant ranking based on weighted criteria to ensure fair and efficient candidate evaluation.",
+    image: `${basePath}/images/project/bi/1.png`,
+    techStack: ['React JS', 'Express JS', 'Redux', 'Tailwind'],
+    links: [
+      {
+        type: 'backend',
+        url: 'https://github.com/Raafina/Final-Project-Intern-BI-BE',
+        icon: 'github',
+      },
+      {
+        type: 'frontend',
+        url: 'https://github.com/Raafina/Final-Project-Intern-BI-BE',
+        icon: 'github',
+      },
+    ],
+    detailImages: [
+      {
+        src: `${basePath}/images/project/bi/1.png`,
+        alt: 'BI 1',
+      },
+      {
+        src: `${basePath}/images/project/bi/2.png`,
+        alt: 'BI 2',
+      },
+      {
+        src: `${basePath}/images/project/bi/3.png`,
+        alt: 'BI 3',
+      },
+      {
+        src: `${basePath}/images/project/bi/4.png`,
+        alt: 'BI 4',
+      },
+      {
+        src: `${basePath}/images/project/bi/5.png`,
+        alt: 'BI 5',
+      },
+      {
+        src: `${basePath}/images/project/bi/6.png`,
+        alt: 'BI 6',
+      },
+    ],
+  },
+  {
+    id: 4,
     title: "Customer Relationship Management 'LoyalCust'",
     description:
       'LoyalCust is a web-based CRM platform that focuses on managing customer and sales databases to help UMKM.',
@@ -37,9 +270,9 @@ const projectsData: Project[] = [
       'Laravel',
       'Cloudinary',
       'Next JS',
-      'React',
+      'React JS',
       'Redux',
-      'TailwindCSS',
+      'Tailwind',
       'TypeScript',
       'PostgreSQL',
     ],
@@ -72,7 +305,7 @@ const projectsData: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: "Airplane Ticket Booking Website 'TerbangIn'",
     description:
       'TerbangIn is an airline ticket booking platform that allows users to search flight schedules, select seats, and pay for tickets online.',
@@ -96,18 +329,10 @@ const projectsData: Project[] = [
         src: `${basePath}/images/project/terbangin.png`,
         alt: 'TerbangIn Homepage',
       },
-      {
-        src: `${basePath}/images/project/terbangin.png`,
-        alt: 'Flight Search',
-      },
-      {
-        src: `${basePath}/images/project/terbangin.png`,
-        alt: 'Seat Selection',
-      },
     ],
   },
   {
-    id: 3,
+    id: 6,
     title: "Hiking information and news 'Lokapath'",
     description:
       'Lokapath is a platform that presents information, news, and stories about the world of climbing, ranging from tips, reviews, to hiker experiences.',
@@ -125,18 +350,10 @@ const projectsData: Project[] = [
         src: `${basePath}/images/project/lokapath.png`,
         alt: 'Lokapath Homepage',
       },
-      {
-        src: `${basePath}/images/project/lokapath.png`,
-        alt: 'Hiking Articles',
-      },
-      {
-        src: `${basePath}/images/project/lokapath.png`,
-        alt: 'Trail Information',
-      },
     ],
   },
   {
-    id: 4,
+    id: 7,
     title: "Artesian Water Payment Management System 'Sitoya'",
     description:
       'Sitoya was designed to manage artesian water payments in Desa Salam Kerep, Kota Semarang.',
@@ -153,14 +370,6 @@ const projectsData: Project[] = [
       {
         src: `${basePath}/images/project/sitoya.png`,
         alt: 'Sitoya Dashboard',
-      },
-      {
-        src: `${basePath}/images/project/sitoya.png`,
-        alt: 'Payment Management',
-      },
-      {
-        src: `${basePath}/images/project/sitoya.png`,
-        alt: 'Customer Records',
       },
     ],
   },
@@ -199,12 +408,12 @@ export default function Project() {
           </div>
         </div>
 
-        <div className="w-full px-4 flex flex-wrap justify-center gap-6 xl:w-10/12 xl:mx-auto">
+        <div className="w-full flex flex-wrap justify-center md:gap-6 xl:mx-auto">
           {projectsData.map((project) => (
             <div
               key={project.id}
               onClick={() => handleViewDetails(project)}
-              className="w-full md:w-[calc(50%-12px)] mb-6 md:mb-0 p-4 justify-center md:text-left border-slate-300 dark:border-slate-600 border-2 rounded-2xl bg-white dark:bg-slate-800 shadow-md dark:shadow-slate-700 cursor-pointer hover:shadow-lg transition-shadow duration-300">
+              className="w-full md:w-1/3 lg:w-1/4 mb-6 md:mb-0 p-4 justify-center md:text-left border-slate-300 dark:border-slate-600 border-2 rounded-2xl bg-white dark:bg-slate-800 shadow-md dark:shadow-slate-700 cursor-pointer hover:shadow-lg transition-shadow duration-300">
               <div className="relative rounded-md shadow-md overflow-hidden transform transition duration-300 group">
                 <Image
                   width={500}
@@ -215,13 +424,9 @@ export default function Project() {
                 />
               </div>
 
-              <h3 className="font-bold text-xl text-dark dark:text-white mt-5 mb-3">
+              <h3 className="font-bold text-lg text-dark dark:text-white mt-5 mb-3">
                 {project.title}
               </h3>
-
-              <p className="font-medium text-base text-secondary dark:text-slate-300 mb-4">
-                {project.description}
-              </p>
 
               <div>
                 <div className="flex flex-wrap">

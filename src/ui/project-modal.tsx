@@ -52,7 +52,7 @@ export default function ProjectModal({
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white dark:bg-slate-800 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto">
+      <div className="bg-white dark:bg-slate-800 rounded-lg max-w-4xl max-h-[70vh] overflow-y-auto">
         <div className="p-6">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-2xl font-bold text-dark dark:text-white">
@@ -66,13 +66,13 @@ export default function ProjectModal({
           </div>
 
           <div className="mb-6">
-            <div className="relative">
+            <div className="relative rounded-md shadow-md overflow-hidden transform transition duration-300 group">
               <Image
                 src={project.detailImages[currentImageIndex].src}
                 alt={project.detailImages[currentImageIndex].alt}
-                width={800}
-                height={600}
-                className="w-full h-96 object-cover rounded-lg"
+                width={500}
+                height={300}
+                className="w-full transition duration-300 ease-in-out"
               />
 
               {project.detailImages.length > 1 && (
