@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Navbar() {
@@ -66,11 +67,11 @@ export default function Navbar() {
       <div className="container">
         <div className="flex items-center justify-between relative">
           <div className="px-4">
-            <a
+            <Link
               href="#home"
               className="font-bold text-lg text-primary py-6 block">
               raafinuradzani
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center px-4 order-2 lg:order-1">
@@ -90,11 +91,11 @@ export default function Navbar() {
                 {['home', 'skills', 'portofolio', 'experience', 'contact'].map(
                   (section) => (
                     <li className="group" key={section}>
-                      <a
+                      <Link
                         href={`#${section}`}
                         className="group-hover:text-primary dark:text-white px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out">
                         {section.charAt(0).toUpperCase() + section.slice(1)}
-                      </a>
+                      </Link>
                     </li>
                   )
                 )}

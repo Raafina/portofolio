@@ -461,7 +461,7 @@ export default function Project() {
             <div
               key={project.id}
               onClick={() => handleViewDetails(project)}
-              className="w-full md:w-1/3 lg:w-1/4 mb-6 md:mb-0 p-4 justify-center md:text-left border-slate-300 dark:border-slate-600 border-2 rounded-2xl bg-white dark:bg-slate-800 shadow-md dark:shadow-slate-700 cursor-pointer hover:shadow-lg transition-shadow duration-300">
+              className="w-full  hover:scale-105 transition md:w-1/3 lg:w-1/4 mb-6 md:mb-0 p-4 justify-center md:text-left border-slate-300 dark:border-slate-600 border-2 rounded-2xl bg-white dark:bg-slate-800 shadow-md dark:shadow-slate-700 cursor-pointer hover:shadow-lg  duration-300">
               <div className="relative rounded-md shadow-md overflow-hidden transform transition duration-300 group">
                 <Image
                   width={500}

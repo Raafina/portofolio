@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
+import Link from 'next/link';
 const basePath = process.env.NODE_ENV === 'production' ? '/portofolio' : '';
 
 export default function Hero() {
@@ -48,16 +49,16 @@ export default function Hero() {
               build better products.
             </p>
             <div className="flex flex-col md:flex-row gap-3 text-center md:text-left">
-              <a
+              <Link
                 href="#contact"
-                className="text-base text-white font-semibold rounded-full bg-blue-500 py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">
+                className="text-base text-white font-semibold rounded-full border-2 border-blue-500 bg-blue-500 py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">
                 Contact
-              </a>
-              <a
-                href="https://drive.google.com/uc?export=download&id=1scFdySehWBhpUNnm4QykFh8vBGuZ3noB"
+              </Link>
+              <Link
+                href="https://drive.google.com/uc?export=download&id=1mE9r06Pw3VgLEarNYCyHh48BOMEaXpyf"
                 className="text-base text-blue-500 font-semibold rounded-full border-2 border-blue-500 py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">
                 Resume
-              </a>
+              </Link>
             </div>
           </div>
         </div>
