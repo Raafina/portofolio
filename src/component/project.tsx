@@ -338,7 +338,7 @@ const projectsData: Project[] = [
     description:
       'TerbangIn is an airline ticket booking platform that allows users to search flight schedules, select seats, and pay for tickets online.',
     image: `${basePath}/images/project/terbangin.png`,
-    techStack: ['React', 'Node JS', 'Express JS', 'PostgreSQL', 'Redux'],
+    techStack: ['React JS', 'Express JS', 'PostgreSQL', 'Redux'],
     links: [
       {
         type: 'backend',
