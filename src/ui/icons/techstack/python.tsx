@@ -29,8 +29,8 @@ export default function PythonIcon() {
           x2="59.1669"
           y2="58.0107"
           gradientUnits="userSpaceOnUse">
-          <stop stop-color="#387EB8" />
-          <stop offset="1" stop-color="#366994" />
+          <stop stopColor="#387EB8" />
+          <stop offset="1" stopColor="#366994" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_790_6849"
@@ -39,8 +39,8 @@ export default function PythonIcon() {
           x2="93.2466"
           y2="90.7623"
           gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FFE052" />
-          <stop offset="1" stop-color="#FFC331" />
+          <stop stopColor="#FFE052" />
+          <stop offset="1" stopColor="#FFC331" />
         </linearGradient>
       </defs>
     </svg>

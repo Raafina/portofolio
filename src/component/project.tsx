@@ -49,7 +49,7 @@ const projectsData: Project[] = [
     detailImages: [
       {
         src: `${basePath}/images/project/soraClinic/1.png`,
-        alt: 'LoyalCust Dashboard',
+        alt: 'Sora Clinic Dashboard',
       },
       {
         src: `${basePath}/images/project/soraClinic/doctor_1.png`,
@@ -218,7 +218,7 @@ const projectsData: Project[] = [
     id: 3.5,
     title: 'Automated Selection System using MOORA Method for BI Internship',
     description:
-      "A decision support system developed for Bank Indonesia's internship selection process using the MOORA method. This project automates applicant ranking based on weighted criteria to ensure fair and efficient candidate evaluation.",
+      'A decision support system developed for Final Project Internship at Kantor Perwakilan Bank Indonesia Provinsi Jawa Tengah. The system automates the internship selection process using the MOORA method. This project automates applicant ranking based on weighted criteria to ensure fair and efficient candidate evaluation.',
     image: `${basePath}/images/project/bi/1.png`,
     techStack: ['React JS', 'Express JS', 'Redux', 'Tailwind'],
     links: [
@@ -265,7 +265,7 @@ const projectsData: Project[] = [
     title: "Customer Relationship Management 'LoyalCust'",
     description:
       'LoyalCust is a web-based CRM platform that focuses on managing customer and sales databases to help UMKM.',
-    image: `${basePath}/images/project/loyalcust.png`,
+    image: `${basePath}/images/project/loyalcust/1.png`,
     techStack: [
       'Laravel',
       'Cloudinary',
@@ -291,16 +291,44 @@ const projectsData: Project[] = [
     ],
     detailImages: [
       {
-        src: `${basePath}/images/project/loyalcust.png`,
-        alt: 'LoyalCust Dashboard',
+        src: `${basePath}/images/project/loyalcust/1.png`,
+        alt: 'Loyalcust 1',
       },
       {
-        src: `${basePath}/images/project/loyalcust.png`,
-        alt: 'Customer Management',
+        src: `${basePath}/images/project/loyalcust/2.png`,
+        alt: 'Loyalcust 2',
       },
       {
-        src: `${basePath}/images/project/loyalcust.png`,
-        alt: 'Sales Analytics',
+        src: `${basePath}/images/project/loyalcust/3.png`,
+        alt: 'Loyalcust 3',
+      },
+      {
+        src: `${basePath}/images/project/loyalcust/4.png`,
+        alt: 'Loyalcust 4',
+      },
+      {
+        src: `${basePath}/images/project/loyalcust/5.png`,
+        alt: 'Loyalcust 5',
+      },
+      {
+        src: `${basePath}/images/project/loyalcust/6.png`,
+        alt: 'Loyalcust 6',
+      },
+      {
+        src: `${basePath}/images/project/loyalcust/7.png`,
+        alt: 'Loyalcust 7',
+      },
+      {
+        src: `${basePath}/images/project/loyalcust/8.png`,
+        alt: 'Loyalcust 8',
+      },
+      {
+        src: `${basePath}/images/project/loyalcust/9.png`,
+        alt: 'Loyalcust 9',
+      },
+      {
+        src: `${basePath}/images/project/loyalcust/10.png`,
+        alt: 'Loyalcust 10',
       },
     ],
   },
@@ -348,7 +376,7 @@ const projectsData: Project[] = [
     detailImages: [
       {
         src: `${basePath}/images/project/lokapath.png`,
-        alt: 'Lokapath Homepage',
+        alt: 'Lokapath 1',
       },
     ],
   },
@@ -357,7 +385,7 @@ const projectsData: Project[] = [
     title: "Artesian Water Payment Management System 'Sitoya'",
     description:
       'Sitoya was designed to manage artesian water payments in Desa Salam Kerep, Kota Semarang.',
-    image: `${basePath}/images/project/sitoya.png`,
+    image: `${basePath}/images/project/sitoya/1.png`,
     techStack: ['Laravel', 'MySQL', 'Bootstrap', 'jQuery'],
     links: [
       {
@@ -368,8 +396,28 @@ const projectsData: Project[] = [
     ],
     detailImages: [
       {
-        src: `${basePath}/images/project/sitoya.png`,
-        alt: 'Sitoya Dashboard',
+        src: `${basePath}/images/project/sitoya/1.png`,
+        alt: 'Sitoya 1',
+      },
+      {
+        src: `${basePath}/images/project/sitoya/2.png`,
+        alt: 'Sitoya 2',
+      },
+      {
+        src: `${basePath}/images/project/sitoya/3.png`,
+        alt: 'Sitoya 3',
+      },
+      {
+        src: `${basePath}/images/project/sitoya/4.png`,
+        alt: 'Sitoya 4',
+      },
+      {
+        src: `${basePath}/images/project/sitoya/5.png`,
+        alt: 'Sitoya 5',
+      },
+      {
+        src: `${basePath}/images/project/sitoya/6.png`,
+        alt: 'Sitoya 6',
       },
     ],
   },
