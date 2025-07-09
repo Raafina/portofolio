@@ -221,7 +221,6 @@ export default function ProjectModal({
                   ))}
                 </div>
               </div>
-
               <div>
                 <p className="text-lg font-bold text-gray-800 dark:text-white">
                   Link

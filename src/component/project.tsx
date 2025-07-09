@@ -56,10 +56,6 @@ const projectsData: Project[] = [
         alt: 'Sora Clinic doctor 1',
       },
       {
-        src: `${basePath}/images/project/soraClinic/doctor_2.png`,
-        alt: 'Sora Clinic doctor 2',
-      },
-      {
         src: `${basePath}/images/project/soraClinic/doctor_3.png`,
         alt: 'Sora Clinic doctor 3',
       },
@@ -68,20 +64,12 @@ const projectsData: Project[] = [
         alt: 'Sora Clinic doctor 4',
       },
       {
-        src: `${basePath}/images/project/soraClinic/doctor_5.png`,
-        alt: 'Sora Clinic doctor 5',
-      },
-      {
         src: `${basePath}/images/project/soraClinic/doctor_6.png`,
         alt: 'Sora Clinic doctor 6',
       },
       {
         src: `${basePath}/images/project/soraClinic/doctor_7.png`,
         alt: 'Sora Clinic doctor 7',
-      },
-      {
-        src: `${basePath}/images/project/soraClinic/doctor_8.png`,
-        alt: 'Sora Clinic doctor 8',
       },
       {
         src: `${basePath}/images/project/soraClinic/patient_1.png`,
@@ -98,18 +86,6 @@ const projectsData: Project[] = [
       {
         src: `${basePath}/images/project/soraClinic/patient_4.png`,
         alt: 'Sora Clinic patient 4',
-      },
-      {
-        src: `${basePath}/images/project/soraClinic/patient_5.png`,
-        alt: 'Sora Clinic patient 5',
-      },
-      {
-        src: `${basePath}/images/project/soraClinic/admin_1.png`,
-        alt: 'Sora Clinic admin 1',
-      },
-      {
-        src: `${basePath}/images/project/soraClinic/admin_2.png`,
-        alt: 'Sora Clinic admin 2',
       },
     ],
   },
