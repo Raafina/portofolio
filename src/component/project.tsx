@@ -29,6 +29,45 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
+    title: "Event Management System 'Temutix'",
+    description:
+      'TemuTix is an online ticket booking platform that makes it easy to discover and purchase tickets for concerts, festivals, and various events. It offers a seamless user experience with digital tickets, secure payments, and real-time event info. Designed for both event organizers and attendees, TemuTix simplifies the entire ticketing process.',
+    image: `${basePath}/images/project/temutix/1.png`,
+    techStack: ['Next JS', 'React JS', 'Express JS', 'TypeScript', 'MongoDB'],
+    links: [
+      {
+        type: 'backend',
+        url: 'https://github.com/Raafina/Temutix-BE',
+        icon: 'github',
+      },
+      {
+        type: 'frontend',
+        url: 'https://github.com/Raafina/Temutix-FE',
+        icon: 'github',
+      },
+      { type: 'demo', url: 'https://temutix.vercel.app/', icon: 'demo' },
+    ],
+    detailImages: [
+      {
+        src: `${basePath}/images/project/temutix/1.png`,
+        alt: 'Sora Clinic Dashboard',
+      },
+      {
+        src: `${basePath}/images/project/temutix/2.png`,
+        alt: 'Sora Clinic doctor 1',
+      },
+      {
+        src: `${basePath}/images/project/temutix/3.png`,
+        alt: 'Sora Clinic doctor 3',
+      },
+      {
+        src: `${basePath}/images/project/temutix/4.png`,
+        alt: 'Sora Clinic doctor 4',
+      },
+    ],
+  },
+  {
+    id: 1,
     title: "Polyclinic Management System 'Sora Clinic'",
     description:
       'Sora Clinic is a web-based polyclinic management system designed to streamline patient queue handling and doctor scheduling. It offers an intuitive interface for administrators, doctors, and patients to manage appointments efficiently. Built for scalability and ease of use, Sora Clinic helps healthcare providers deliver better, faster service.',
