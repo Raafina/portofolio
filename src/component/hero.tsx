@@ -55,7 +55,7 @@ export default function Hero() {
                 Contact
               </Link>
               <Link
-                href="https://drive.google.com/uc?export=download&id=1mE9r06Pw3VgLEarNYCyHh48BOMEaXpyf"
+                href="https://drive.google.com/uc?export=download&id=17LfpgwObDevkRiV8jwMF4_eVT2GHWA1F"
                 className="text-base text-blue-500 font-semibold rounded-full border-2 border-blue-500 py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">
                 Resume
               </Link>
