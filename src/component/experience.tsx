@@ -6,6 +6,15 @@ import ChevronIcon from '../ui/icons/chevron';
 
 const experiences = [
   {
+    company: 'Manifestasi Tech',
+    position: 'Frontend Developer',
+    date: 'March 2025 - Present',
+    details: [
+      'Developing frontend for various projects, including research websites for university lecturers, marketplace platforms, and modern landing pages.',
+      ' Collaborating with cross-functional teams to translate UI/UX requirements into clean, scalable frontend components aligned with usability, accessibility, and performance best practices.',
+    ],
+  },
+  {
     company: 'Rapier Technology International',
     position: 'Frontend Developer',
     date: 'February 2025 - May 2025',
@@ -14,15 +23,6 @@ const experiences = [
       'Integrated 60+ RESTful API endpoints.',
       'Resolved 30+ development issues (bug and improvement).',
       'Presented project progress and key updates directly to clients and stakeholders.',
-    ],
-  },
-  {
-    company: 'Manifestasi Tech',
-    position: 'Frontend Developer',
-    date: 'March 2025 - April 2025',
-    details: [
-      'Developed a research-oriented website for the lecturers Jurusan Keperawatan, Fakultas Kedokteran, Universitas Diponegoro.',
-      'Implemented frontend components for functionality, high performance, and match with user experience.',
     ],
   },
   {
