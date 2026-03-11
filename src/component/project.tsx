@@ -33,7 +33,14 @@ const projectsData: Project[] = [
     description:
       'TemuTix is an online ticket booking platform that makes it easy to discover and purchase tickets for concerts, festivals, and various events. It offers a seamless user experience with digital tickets, secure payments, and real-time event info. Designed for both event organizers and attendees, TemuTix simplifies the entire ticketing process.',
     image: `${basePath}/images/project/temutix/1.png`,
-    techStack: ['Next JS', 'React JS', 'Express JS', 'TypeScript', 'MongoDB'],
+    techStack: [
+      'Next JS',
+      'React JS',
+      'Express JS',
+      'TypeScript',
+      'MongoDB',
+      'Cloudinary',
+    ],
     links: [
       {
         type: 'backend',
@@ -50,19 +57,66 @@ const projectsData: Project[] = [
     detailImages: [
       {
         src: `${basePath}/images/project/temutix/1.png`,
-        alt: 'Sora Clinic Dashboard',
+        alt: 'TemuTix',
       },
       {
         src: `${basePath}/images/project/temutix/2.png`,
-        alt: 'Sora Clinic doctor 1',
+        alt: 'TemuTix',
       },
       {
         src: `${basePath}/images/project/temutix/3.png`,
-        alt: 'Sora Clinic doctor 3',
+        alt: 'TemuTix',
       },
       {
         src: `${basePath}/images/project/temutix/4.png`,
-        alt: 'Sora Clinic doctor 4',
+        alt: 'TemuTix',
+      },
+      {
+        src: `${basePath}/images/project/temutix/5.png`,
+        alt: 'TemuTix',
+      },
+      {
+        src: `${basePath}/images/project/temutix/6.png`,
+        alt: 'TemuTix',
+      },
+      {
+        src: `${basePath}/images/project/temutix/7.png`,
+        alt: 'TemuTix',
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: 'Jamur Cikuda Nusantara',
+    description:
+      'Jamur Cikuda Nusantara is a landing page website that showcases a variety of mushroom-based products while also providing a simple e-commerce feature. The website presents product information, highlights the brand, and allows users to easily browse and purchase products through a straightforward and user-friendly interface. Designed with a clean layout, it helps introduce the business to a wider audience and supports basic online sales.',
+    image: `${basePath}/images/project/jamurcikuda/1.png`,
+    techStack: ['Next JS', 'React JS', 'Zustand', 'TypeScript'],
+    links: [{ type: 'demo', url: 'https://jamurcikuda.co.id/', icon: 'demo' }],
+    detailImages: [
+      {
+        src: `${basePath}/images/project/jamurcikuda/1.png`,
+        alt: 'jamurcikuda',
+      },
+      {
+        src: `${basePath}/images/project/jamurcikuda/2.png`,
+        alt: 'jamurcikuda',
+      },
+      {
+        src: `${basePath}/images/project/jamurcikuda/3.png`,
+        alt: 'jamurcikuda',
+      },
+      {
+        src: `${basePath}/images/project/jamurcikuda/4.png`,
+        alt: 'jamurcikuda',
+      },
+      {
+        src: `${basePath}/images/project/jamurcikuda/5.png`,
+        alt: 'jamurcikuda',
+      },
+      {
+        src: `${basePath}/images/project/jamurcikuda/6.png`,
+        alt: 'jamurcikuda',
       },
     ],
   },
@@ -374,27 +428,27 @@ const projectsData: Project[] = [
       },
     ],
   },
-  {
-    id: 6,
-    title: "Hiking information and news 'Lokapath'",
-    description:
-      'Lokapath is a platform that presents information, news, and stories about the world of climbing, ranging from tips, reviews, to hiker experiences.',
-    image: `${basePath}/images/project/lokapath.png`,
-    techStack: ['Laravel', 'MySQL', 'Tailwind', 'jQuery'],
-    links: [
-      {
-        type: 'repository',
-        url: 'https://github.com/Raafina/Lokapath',
-        icon: 'github',
-      },
-    ],
-    detailImages: [
-      {
-        src: `${basePath}/images/project/lokapath.png`,
-        alt: 'Lokapath 1',
-      },
-    ],
-  },
+  // {
+  //   id: 6,
+  //   title: "Hiking information and news 'Lokapath'",
+  //   description:
+  //     'Lokapath is a platform that presents information, news, and stories about the world of climbing, ranging from tips, reviews, to hiker experiences.',
+  //   image: `${basePath}/images/project/lokapath.png`,
+  //   techStack: ['Laravel', 'MySQL', 'Tailwind', 'jQuery'],
+  //   links: [
+  //     {
+  //       type: 'repository',
+  //       url: 'https://github.com/Raafina/Lokapath',
+  //       icon: 'github',
+  //     },
+  //   ],
+  //   detailImages: [
+  //     {
+  //       src: `${basePath}/images/project/lokapath.png`,
+  //       alt: 'Lokapath 1',
+  //     },
+  //   ],
+  // },
   {
     id: 7,
     title: "Artesian Water Payment Management System 'Sitoya'",
