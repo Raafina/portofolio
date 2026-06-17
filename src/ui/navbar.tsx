@@ -34,7 +34,7 @@ export default function Navbar() {
     const html = document.documentElement;
     const stored = localStorage.getItem('theme');
     const prefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
+      '(prefers-color-scheme: dark)',
     ).matches;
     const isDarkMode = stored === 'dark' || (!stored && prefersDark);
     setIsDark(isDarkMode);
@@ -97,7 +97,7 @@ export default function Navbar() {
                         {section.charAt(0).toUpperCase() + section.slice(1)}
                       </Link>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </nav>
@@ -108,36 +108,46 @@ export default function Navbar() {
               onClick={toggleTheme}
               className="cursor-pointer"
               aria-label="Toggle Dark Mode">
-              <div className="flex items-center h-7 w-12 rounded-full relative p-1 transition duration-300 ease-in-out">
-                {isDark ? (
-                  <svg
-                    className="w-6 h-6 text-white"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24">
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17 5v3m0 0v3m0-3h-3m3 0h3m-3.356 7.091c-1.639 0-2.58-.248-3.708-.957-1.129-.709-2.02-1.72-2.563-2.909-.544-1.189-.718-2.505-.501-3.788.217-1.283.816-2.477 1.724-3.437-1.343.205-2.607.744-3.668 1.565-1.061.821-1.881 1.894-2.381 3.115-.5 1.221-.661 2.546-.468 3.845.193 1.299.734 2.527 1.568 3.563.835 1.036 1.935 1.844 3.192 2.344 1.257.5 2.627.675 3.975.507 1.348-.168 2.628-.672 3.713-1.463 1.085-.791 1.937-1.842 2.473-3.048-1.007.52-1.933.664-3.356.664Z"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="w-6 h-6 text-gray-800 dark:text-white"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24">
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
-                    />
-                  </svg>
-                )}
+              <div className="relative flex h-7 w-12 items-center rounded-full p-1 transition duration-300 ease-in-out bg-gray-200 dark:bg-gray-700 cursor-pointer">
+                <div
+                  className={`absolute h-5 w-5 rounded-full bg-white flex items-center justify-center shadow-md transform transition duration-300 ease-in-out ${
+                    isDark ? 'translate-x-5' : 'translate-x-0'
+                  }`}>
+                  {isDark ? (
+                    /* Moon Icon */
+                    <svg
+                      className="w-6 h-6 text-gray-800"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24">
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"
+                      />
+                    </svg>
+                  ) : (
+                    /* Sun Icon */
+                    <svg
+                      className="w-4 h-4 text-amber-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24">
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+                      />
+                    </svg>
+                  )}
+                </div>
               </div>
             </button>
           </div>

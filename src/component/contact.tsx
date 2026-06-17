@@ -24,7 +24,7 @@ export default function Contact() {
   const apiURL = 'https://formspree.io/f/xjkgaakp';
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -80,7 +80,9 @@ export default function Contact() {
       <div className="container">
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto text-center mb-16">
-            <h4 className="font-bold text-lg text-primary mb-2">Contact</h4>
+            <p className="text-sm font-semibold tracking-widest text-primary uppercase mb-2">
+              Contact
+            </p>
             <h2 className="font-bold text-dark dark:text-white text-3xl mb-4">
               Contact Me
             </h2>
